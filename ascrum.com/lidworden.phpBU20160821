@@ -1,0 +1,158 @@
+<?php 
+	require_once('lib/php/insertHeader.php'); 
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<?php echoHead('Lid worden');?>
+
+
+<body>
+
+  	<?php insertHeader('lidworden');?>
+
+    <section id="partner">
+        <div class="container">
+			<div class="center wow fadeInDown">
+				<h2>Lid worden</h2>
+				<!--
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+				-->
+			</div>
+		</div>
+	</section>
+	
+	<section id="lidworden" style='background-color: #f2f2f2'>
+        <div class="container">
+            <div class="center">        
+                <h2></h2>
+                <p class="lead">
+				Studeer je in Amsterdam en lijkt rugby je wat, komt dan met ons meedoen op woensdag- en vrijdagavond.
+				</p>
+				<p><strong>Wil je je aanmelden voor de Jonghe Honden clinic 2016, klik dan <a href='clinic2016'>hier</a>!</strong></p>
+				
+				<p>
+				Op woensdag trainen de Jonghe Honden dus als je nog nooit gespeeld hebt is het verstanding om bij hen aan te sluiten.
+				</p>
+				<p>
+				Het adres is: <b>Bok de Korverweg 6 te Amsterdam</b>, je kan het beste met de fiets komen.
+				</p>
+				<p>
+				Heb je een vraag? Dan kan je die via onderstaand formulier stellen.
+				</p>
+			</div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="lib/php/lidWordenEmail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Naam *</label>
+                            <input type="text" name="naam" id='naam' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" id='email' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefoonnummer *</label>
+                            <input type="number" name='telefoonnummer' id='telefoonnummer' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Opleiding *</label>
+                            <input type="text" name='opleiding' id='opleiding' class="form-control" required="required">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Opleidingsinstantie *</label>
+                            <input type="text" name="opleidingsinstantie" id='opleidingsinstantie' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message </label>
+                            <textarea name="bericht" id="bericht" class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" id='verzenden' name="submit" class="btn btn-primary btn-lg" required="required">Verstuur</button>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </section>
+	<!--
+		<section id="lidworden" style='background-color: #f2f2f2'>
+        <div class="container">
+            <div class="center">        
+                <h2>Jonghe Honden Clinic</h2>
+                <p class="lead">
+				Kom je in Amsterdam studeren en lijkt rugby je wat, schrijf je dan snel in voor de Jonghe Honden Clinic! 
+				</p>
+				<p>
+				De clinic start <b>woensdag 16 september om 19:00</b> en duurt 6 weken. Deze clinic sluit je af met een spannende wedstrijd tegen een Jonghe Honden team uit een andere stad. Bij Ascrum is het natuurlijk niet alleen sporten, we zijn namelijk niet vies van een goeie derde helft.
+				</p>
+				<p>
+				Het adres is: <b>Bok de Korverweg 6 te Amsterdam</b>, je kan het beste met de fiets komen.
+				</p>
+				<p>
+				Kom langs om te proeven wat de mooiste vereniging van Nederland te bieden heeft.
+				</p>
+				<p>
+				Kosten: &euro; 20,-
+				</p>
+
+			</div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="lib/php/lidWordenEmail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Naam *</label>
+                            <input type="text" name="naam" id='naam' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" id='email' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefoonnummer *</label>
+                            <input type="number" name='telefoonnummer' id='telefoonnummer' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Opleiding *</label>
+                            <input type="text" name='opleiding' id='opleiding' class="form-control" required="required">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Opleidingsinstantie *</label>
+                            <input type="text" name="opleidingsinstantie" id='opleidingsinstantie' class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message </label>
+                            <textarea name="bericht" id="bericht" class="form-control" rows="8">Ik wil me graag inschrijven voor de Jonghe Honden clinic van 2015!</textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" id='verzenden' name="submit" class="btn btn-primary btn-lg" required="required">Verstuur</button>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </section>
+	-->
+
+     <?php insertFooter(); ?>
+    
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel()
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>    
+	
